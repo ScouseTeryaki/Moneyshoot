@@ -8,17 +8,16 @@ namespace Moneyshoot
 {
     class BasePlayer
     {
-        public long SteamID { get; set; }
-        public string Name { get; set; }
-        public float Damage { get; set; }
-        public int Kills { get; set; }
+        public long SteamID { get; set; } // Done
+        public string Name { get; set; } // Done
+        public float Damage { get; set; } // Done
+        public int Kills { get; set; } // Done
         public int EntryKills { get; set; }
-        public int Headshots { get; set; }
-        public int Deaths { get; set; }
-        public int Assists { get; set; }
-        public int BombPlants { get; set; }
-        public int BombDefuses { get; set; }
-        public int MVPs { get; set; }
+        public int Headshots { get; set; } // Done
+        public int Deaths { get; set; } // Done
+        public int Assists { get; set; } // Done
+        public int BombPlants { get; set; } // Done
+        public int MVPs { get; set; } // Done
 
         public BasePlayer()
         {
@@ -35,8 +34,7 @@ namespace Moneyshoot
             me.Headshots = Headshots;
             me.Deaths = Deaths;
             me.Assists = Assists;
-            me.BombDefuses = BombDefuses;
-            me.BombDefuses = BombDefuses;
+            me.BombPlants = BombPlants;
             me.MVPs = MVPs;
             me.Damage = Damage;
             return me;
