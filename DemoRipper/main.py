@@ -1,14 +1,24 @@
 import urllib.request
 import re
 import csv
+import zipfile
 
 
 def main():
     finals = save_event_finals()
     events = save_events(finals)
+    save_event_matches(events)
+    # Save demo download url
+    # for demo in match demos download each demo
+    # Name each demo the face-up then the map name
+    # Store demo in a directory named the face-up
+    # Store directory in another directory named the event name
+    # e.g -iem-cologne-2021
+    #       -faze-vs-navi
+    #           -faze-vs-navi-inferno.dem
 
 
-def save_event_matches():
+def save_event_matches(events):
     pass
 
 
@@ -143,8 +153,9 @@ def download_demo(url):
     urllib.request.urlretrieve(url, local)
 
 
-def unzip_demo(file_dir):
-    pass
+def unzip_demo(file_dir, target_dir):
+    with zipfile.ZipFile(file_dir, 'r') as zip_ref:
+        zip_ref.extractall(target_dir)
 
 
 main()
