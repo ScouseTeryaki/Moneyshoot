@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moneyshoot", "Moneyshoot\Moneyshoot.csproj", "{7C20F4DE-D75D-40B3-8329-023125ABD310}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoInfo", "..\..\..\Downloads\CSGO-Demos-Manager-master\CSGO-Demos-Manager-master\demoinfo\DemoInfo\DemoInfo.csproj", "{22D4CFC7-6810-4C18-A353-71A49782394F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoInfo", "..\CSGO-Demos-Manager-master\demoinfo\DemoInfo\DemoInfo.csproj", "{22D4CFC7-6810-4C18-A353-71A49782394F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
